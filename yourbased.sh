@@ -41,7 +41,7 @@ fi
 if [ ! -f /usr/bin/google-chrome-binary ]; then 
   mv /usr/bin/google-chrome /usr/bin/google-chrome-binary
   echo "#!/bin/bash" > /usr/bin/google-chrome
-  echo "/usr/bin/google-chrome-binary --no-sandbox \$*" >> /usr/bin/google-chrome
+  echo "/usr/bin/google-chrome-binary --no-sandbox --headless \$*" >> /usr/bin/google-chrome
   chmod a+x /usr/bin/google-chrome
 fi
 
