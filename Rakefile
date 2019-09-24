@@ -1,4 +1,5 @@
 require 'bundler'
+require 'yourbase/rspec/skipper'
 Bundler::GemHelper.install_tasks
 
 require 'rspec/core/rake_task'
