@@ -32,9 +32,12 @@ Gem::Specification.new do |s|
   # This was resolved in v1.60, but we still need to skip 1.58 & 1.59.
   s.add_dependency "activemerchant", "~> 1.48", "!= 1.58.0", "!= 1.59.0"
 
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "yourbase-rspec-skipper"
   s.add_development_dependency "braintree", "~> 2.0"
   s.add_development_dependency "rspec-rails", "~> 3.2"
   s.add_development_dependency "simplecov"
+  s.add_development_dependency "sprockets", "< 4.0.0"
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "capybara", "~> 2.18"
   s.add_development_dependency "capybara-screenshot"
